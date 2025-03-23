@@ -29,7 +29,7 @@ In this lab, I used BigQuery to:
 2. Expand `ecommerce`.
 3. Clicked `all_sessions_raw`.
 
-SCREENSHOT 1[]()
+![](https://github.com/TammyTheAnalyst/Exploring-Your-Ecommerce-Dataset-with-SQL-in-Google-BigQuery/blob/main/Screenshot%20(4433).png)
 
 In the right pane, I was presented with 3 views of the table data:
 
@@ -42,7 +42,7 @@ By previewing sample rows from the table, I was able to get a sense of the data'
 To see sample rows without writing SQL, I clicked the preview tab. While scanning through the rows, 
 I noticed there wasn’t a singular field that uniquely identified each row, so I knew I would need advanced logic to identify duplicate rows.
 
-SCREENSHOT
+![](https://github.com/TammyTheAnalyst/Exploring-Your-Ecommerce-Dataset-with-SQL-in-Google-BigQuery/blob/main/Screenshot%20(4434).png)
 
 The query I used applied the SQL GROUP BY function on every field and counted (COUNT) rows where the same values appeared across all fields:
 
@@ -52,14 +52,14 @@ I then applied a HAVING clause to filter results and show only the rows where th
 
 When I ran the query, I discovered that there were 615 records with duplicate data.
 
-SCREENSHOT
+![](https://github.com/TammyTheAnalyst/Exploring-Your-Ecommerce-Dataset-with-SQL-in-Google-BigQuery/blob/main/Screenshot%20(4435).png)
 
 Analyze the New all_sessions Table
 Scenario: The data analyst team provided me with a deduplicated table called all_sessions, and schema experts identified the key fields that must be unique for each record.
 
 I ran a query to ensure that the data met the expected schema and didn't contain duplicates for the key fields identified:
 
-SCREENSHOT
+![](https://github.com/TammyTheAnalyst/Exploring-Your-Ecommerce-Dataset-with-SQL-in-Google-BigQuery/blob/main/Screenshot%20(4436).png)
 
 This query returned zero records, meaning that there were no duplicate rows for the key fields.
 
@@ -72,7 +72,7 @@ I wrote a query to determine the total number of product views and the number of
 1. I clicked the + (Compose New Query) icon.
 2. I wrote the following query:
 
-SCREENSHOT
+![](https://github.com/TammyTheAnalyst/Exploring-Your-Ecommerce-Dataset-with-SQL-in-Google-BigQuery/blob/main/Screenshot%20(4437).png)
 
 3. I ensured the syntax was correct by confirming the real-time query validator showed the Green check icon.
 4. I ran the query and reviewed the results to view the number of unique visitors.
@@ -80,29 +80,29 @@ SCREENSHOT
 Query for Unique Visitors by Referring Site
 Next, I wrote a query to find the total number of unique visitors grouped by the referring site (channelGrouping):
 
-SCREENSHOT
+![](https://github.com/TammyTheAnalyst/Exploring-Your-Ecommerce-Dataset-with-SQL-in-Google-BigQuery/blob/main/Screenshot%20(4438).png)
 
 Query for Unique Product Names Alphabetically
 I then created a query to list all unique product names (v2ProductName) in alphabetical order:
 
-SCREENSHOT
+![](https://github.com/TammyTheAnalyst/Exploring-Your-Ecommerce-Dataset-with-SQL-in-Google-BigQuery/blob/main/Screenshot%20(4439).png)
 
 This query returned a total of 633 products (rows).
 
 Query for the Five Products With Most Views
 I wrote a query to find the top five products with the most views, including products that may have been viewed multiple times:
 
-SCREENSHOT
+![](https://github.com/TammyTheAnalyst/Exploring-Your-Ecommerce-Dataset-with-SQL-in-Google-BigQuery/blob/main/Screenshot%20(4440).png)
 
 Bonus: Refined Query to Avoid Double-Counting Product Views
 To refine the analysis, I modified the query to count each product view only once per visitor:
 
-SCREENSHOT
+![](https://github.com/TammyTheAnalyst/Exploring-Your-Ecommerce-Dataset-with-SQL-in-Google-BigQuery/blob/main/Screenshot%20(4444).png)
 
 Query for Distinct Products Ordered and Total Units Ordered
 Next, I expanded the query to include the number of distinct products ordered and the total quantity of products ordered:
 
-SCREENSHOT
+![](https://github.com/TammyTheAnalyst/Exploring-Your-Ecommerce-Dataset-with-SQL-in-Google-BigQuery/blob/main/Screenshot%20(4445).png)
 
 
 
