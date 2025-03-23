@@ -33,9 +33,9 @@ In this lab, I used BigQuery to:
 
 In the right pane, I was presented with 3 views of the table data:
 
-Schema Tab: Shows field names, types, modes, and descriptions, along with logical constraints used to organize the data.
-Details Tab: Displays the table's metadata.
-Preview Tab: Allows a preview of the table data.
+- Schema Tab: Shows field names, types, modes, and descriptions, along with logical constraints used to organize the data.
+- Details Tab: Displays the table's metadata.
+- Preview Tab: Allows a preview of the table data.
 
 By previewing sample rows from the table, I was able to get a sense of the data's structure.
 
@@ -106,7 +106,7 @@ Next, I expanded the query to include the number of distinct products ordered an
 
 
 
-This concludes my analysis of the e-commerce dataset using SQL in Google BigQuery.
+### This concludes my analysis of the e-commerce dataset using SQL in Google BigQuery.
 I was able to explore the data, identify duplicates, and write several queries to gain insights into the website’s performance and product trends.
 
 
