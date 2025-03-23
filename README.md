@@ -1,5 +1,7 @@
 # Exploring Your Ecommerce Dataset with SQL in Google BigQuery Project
 
+![](https://github.com/TammyTheAnalyst/Exploring-Your-Ecommerce-Dataset-with-SQL-in-Google-BigQuery/blob/main/Screenshot%20(4441).png)
+
 I worked with a newly available e-commerce dataset that contains millions of Google Analytics records for the Google Merchandise Store, all loaded into a table in BigQuery.
 For this project, I used a copy of that dataset to explore various scenarios and conduct data analysis. 
 My main focus was identifying and removing duplicate information, followed by performing further analysis on the data to gain insights.
