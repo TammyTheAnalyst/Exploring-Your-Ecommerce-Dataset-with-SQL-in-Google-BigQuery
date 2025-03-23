@@ -46,8 +46,9 @@ I noticed there wasn’t a singular field that uniquely identified each row, so 
 
 The query I used applied the SQL GROUP BY function on every field and counted (COUNT) rows where the same values appeared across all fields:
 
-If all fields were unique, the COUNT would return 1, indicating no duplicate rows.
-If there were rows with identical values across all fields, they would be grouped, and the COUNT would be greater than 1.
+- If all fields were unique, the COUNT would return 1, indicating no duplicate rows.
+- If there were rows with identical values across all fields, they would be grouped, and the COUNT would be greater than 1.
+  
 I then applied a HAVING clause to filter results and show only the rows where the COUNT was greater than 1, identifying the duplicates.
 
 When I ran the query, I discovered that there were 615 records with duplicate data.
@@ -107,7 +108,7 @@ Next, I expanded the query to include the number of distinct products ordered an
 
 
 ### This concludes my analysis of the e-commerce dataset using SQL in Google BigQuery.
-I was able to explore the data, identify duplicates, and write several queries to gain insights into the website’s performance and product trends.
+### I was able to explore the data, identify duplicates, and write several queries to gain insights into the website’s performance and product trends.
 
 
 
