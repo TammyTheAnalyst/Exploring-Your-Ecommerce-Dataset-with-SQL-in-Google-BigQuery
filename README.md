@@ -102,10 +102,7 @@ Next, I expanded the query to include the number of distinct products ordered an
 
 SCREENSHOT
 
-Query for Average Product per Order
-Finally, I wrote a query to calculate the average number of products ordered per order:
 
-SCREENSHOT
 
 This concludes my analysis of the e-commerce dataset using SQL in Google BigQuery.
 I was able to explore the data, identify duplicates, and write several queries to gain insights into the website’s performance and product trends.
